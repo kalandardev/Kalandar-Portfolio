@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#050505">
+  <meta name="description" content="Qalandar Kalandarov — Computer Science student and aspiring frontend developer. Premium web design, real projects and code." id="siteDescription">
+  <title>Qalandar® — Developer & Creative Technologist</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>document.documentElement.classList.add('js');</script>
+  <script src="translations.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
+  <div class="preloader" id="preloader" aria-hidden="true"><div class="preloader-inner"><span class="preloader-mark">Q<span>.</span></span><span class="preloader-caption" data-i18n="preloader">CRAFTED WITH INTENTION</span><span class="preloader-line"></span></div></div>
+  <div class="cursor-aura" id="cursorAura" aria-hidden="true"></div>
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <header class="site-header" id="siteHeader">
+    <nav class="nav shell" aria-label="Main navigation" data-i18n-aria="navAria">
+      <a class="brand" href="#home" aria-label="Qalandar home">QALANDAR<span class="brand-star">✦</span></a>
+      <ul class="nav-list" id="navList">
+        <li><a class="nav-link" href="#about" data-i18n="navAbout">About</a></li>
+        <li><a class="nav-link" href="#expertise" data-i18n="navExpertise">Expertise</a></li>
+        <li><a class="nav-link" href="#work" data-i18n="navWork">Work</a></li>
+        <li><a class="nav-link" href="#journey" data-i18n="navJourney">Journey</a></li>
+        <li><a class="nav-link" href="#contact" data-i18n="navContact">Contact</a></li>
+      </ul>
+      <div class="nav-extras">
+        <label class="sr-only" for="languageSelect" data-i18n="languageLabel">Website language</label>
+        <select class="language-picker" id="languageSelect" aria-label="Website language" data-i18n-aria="languageLabel">
+          <option value="en">EN</option><option value="ru">RU</option><option value="de">DE</option><option value="uz">UZ</option>
+        </select>
+        <a class="header-cta" href="#contact"><span data-i18n="navTalk">Let's talk</span> <span aria-hidden="true">↗</span></a>
+      </div>
+      <button class="menu-toggle" type="button" id="menuToggle" aria-controls="navList" aria-expanded="false" aria-label="Open navigation menu"><span></span><span></span></button>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero section" id="home" aria-labelledby="hero-title">
+      <div class="hero-grid shell">
+        <div class="hero-copy">
+          <div class="eyebrow entrance"><span class="eyebrow-line"></span><span data-i18n="heroEyebrow">INDEPENDENT DEVELOPER PORTFOLIO</span><span class="eyebrow-line short"></span></div>
+          <h1 class="hero-title entrance" id="hero-title"><span data-i18n="heroLine1">Digital craft.</span><br><span data-i18n="heroLine2">Built to</span> <em data-i18n="heroEmphasis">stand apart.</em></h1>
+          <p class="hero-subtitle entrance"><span data-i18n="heroIntro">I'm</span> <strong>Qalandar</strong> — <span data-i18n="heroAbout">a Computer Science student exploring</span> <span class="gold-type" id="rotatingRole" data-i18n="role0">frontend development</span>, <span data-i18n="heroOutro">technology and considered design.</span></p>
+          <div class="hero-actions entrance"><a class="button button-gold magnetic" href="#work"><span data-i18n="exploreWork">Explore my work</span><span aria-hidden="true">↗</span></a><a class="button button-cv" href="assets/Qalandar-Kalandarov-CV-Draft.pdf" download><span data-i18n="downloadCv">Download CV (Draft)</span><span aria-hidden="true">↓</span></a><a class="text-link" href="#about"><span data-i18n="moreAbout">More about me</span> <span aria-hidden="true">↓</span></a></div>
+          <div class="hero-meta entrance"><span><i class="status-dot" aria-hidden="true"></i> <span data-i18n="heroStatus">Building and learning in public</span></span><span class="meta-divider"></span><span data-i18n="heroLocation">Based in Tashkent, Uzbekistan</span></div>
+        </div>
+        <div class="hero-art entrance" tabindex="0" aria-label="Qalandar portrait; hover or press Enter to reveal" data-i18n-aria="portraitAria">
+          <div class="art-corner art-corner-top"></div><div class="art-corner art-corner-bottom"></div>
+          <div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div><div class="art-orbit orbit-three"></div>
+          <div class="art-line art-line-one"></div><div class="art-line art-line-two"></div>
+          <div class="art-center"><span class="art-monogram" aria-hidden="true">K</span><span class="art-rule"></span><span class="art-subline">DESIGN × DEVELOPMENT</span></div>
+          <div class="portrait-layer" aria-hidden="true"><img src="assets/profile.jpg" alt="" loading="eager" fetchpriority="high"><span class="portrait-overlay"></span><span class="portrait-signature">QALANDAR <span>© 2026</span></span></div>
+          <div class="art-stamp art-stamp-top">CREATIVE<br>PORTFOLIO / 26</div>
+          <div class="art-stamp art-stamp-bottom"><span class="art-square"></span> <span data-i18n="intention">INTENTION IN EVERY PIXEL</span></div>
+          <span class="portrait-hint" data-i18n="portraitHint">HOVER / TAP TO REVEAL</span>
+        </div>
+      </div>
+      <div class="hero-bottom shell"><span data-i18n="scrollDiscover">SCROLL TO DISCOVER</span><div class="scroll-indicator"><span></span></div><span class="hero-index">001 — 006</span></div>
+    </section>
+
+    <div class="ticker" aria-label="Technologies"><div class="ticker-track" aria-hidden="true"><span>HTML5</span><i>✦</i><span>CSS3</span><i>✦</i><span>JAVASCRIPT</span><i>✦</i><span>PYTHON</span><i>✦</i><span>RESPONSIVE DESIGN</span><i>✦</i><span>GIT & GITHUB</span><i>✦</i><span>HTML5</span><i>✦</i><span>CSS3</span><i>✦</i><span>JAVASCRIPT</span><i>✦</i><span>PYTHON</span><i>✦</i><span>RESPONSIVE DESIGN</span><i>✦</i><span>GIT & GITHUB</span><i>✦</i></div></div>
+
+    <section class="section about-section" id="about" aria-labelledby="about-title">
+      <div class="shell split-layout">
+        <div class="section-side reveal"><span class="section-number">01 / ABOUT</span><div class="section-side-rule"></div><span class="aside-micro" data-i18n="aboutMicro">PERSON BEHIND THE CODE</span></div>
+        <div class="section-main reveal"><p class="eyebrow eyebrow-plain" data-i18n="aboutEyebrow">A LITTLE INTRODUCTION</p><h2 class="section-title" id="about-title"><span data-i18n="aboutTitle1">Not just code.</span><br><em data-i18n="aboutTitle2">Care for the details.</em></h2><p class="large-copy" data-i18n="aboutLead">I'm Qalandar, a Computer Science student at the Berlin School of Business and Innovation (BSBI), growing my skills in web development and software engineering.</p><p class="muted-copy" data-i18n="aboutCopy">My focus: learn the fundamentals, build projects that work, and make every interface clear, responsive and enjoyable to use. This site is itself one of those projects.</p>
+          <div class="detail-grid"><div><span class="detail-label" data-i18n="focusLabel">CURRENT FOCUS</span><strong data-i18n="focusValue">Frontend Development</strong></div><div><span class="detail-label" data-i18n="approachLabel">APPROACH</span><strong data-i18n="approachValue">Learn · Build · Improve</strong></div><div><span class="detail-label" data-i18n="studiesLabel">STUDIES</span><strong data-i18n="studiesValue">Computer Science · BSBI</strong></div><div><span class="detail-label">GITHUB</span><a href="https://github.com/kalandardev" target="_blank" rel="noopener noreferrer">@kalandardev ↗</a></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section expertise-section" id="expertise" aria-labelledby="expertise-title">
+      <div class="shell"><div class="section-top reveal"><div><p class="eyebrow eyebrow-plain" data-i18n="expertiseEyebrow">WHAT I'M LEARNING & BUILDING</p><h2 class="section-title" id="expertise-title"><span data-i18n="expertiseTitle1">A foundation for</span><br><em data-i18n="expertiseTitle2">better experiences.</em></h2></div><p class="section-top-note" data-i18n="expertiseNote">Working knowledge, continuously improving through hands-on projects.</p></div>
+        <div class="expertise-grid">
+          <article class="expertise-card reveal"><span class="card-index">01</span><div class="expertise-symbol">&lt;/&gt;</div><h3 data-i18n="skillTitle1">Frontend foundations</h3><p data-i18n="skillCopy1">Semantic HTML, maintainable CSS, responsive layouts and purposeful animations.</p><div class="tag-row"><span>HTML5</span><span>CSS3</span><span>ACCESSIBILITY</span></div><span class="card-arrow" aria-hidden="true">↗</span></article>
+          <article class="expertise-card reveal"><span class="card-index">02</span><div class="expertise-symbol">{ }</div><h3 data-i18n="skillTitle2">Interactive interfaces</h3><p data-i18n="skillCopy2">JavaScript fundamentals, DOM interactions, event handling and user-friendly features.</p><div class="tag-row"><span>JavaScript</span><span>DOM</span><span>UX</span></div><span class="card-arrow" aria-hidden="true">↗</span></article>
+          <article class="expertise-card reveal"><span class="card-index">03</span><div class="expertise-symbol">◈</div><h3 data-i18n="skillTitle3">Developer workflow</h3><p data-i18n="skillCopy3">Python foundations, version control and organized project development with GitHub.</p><div class="tag-row"><span>Python</span><span>Git</span><span>GitHub</span></div><span class="card-arrow" aria-hidden="true">↗</span></article>
+        </div>
+        <div class="skills-strip reveal"><span data-i18n="toolsLabel">TOOLS & TECHNOLOGIES</span><div><span>VS CODE</span><span>HTML</span><span>CSS</span><span>JAVASCRIPT</span><span>PYTHON</span><span>GIT</span></div></div>
+      </div>
+    </section>
+
+    <section class="section work-section" id="work" aria-labelledby="work-title">
+      <div class="shell"><div class="section-top reveal"><div><p class="eyebrow eyebrow-plain" data-i18n="workEyebrow">SELECTED WORK</p><h2 class="section-title" id="work-title"><span data-i18n="workTitle1">Proof is in</span><br><em data-i18n="workTitle2">the making.</em></h2></div><p class="section-top-note" data-i18n="workNote">Real public GitHub repositories are loaded directly. Private projects are never displayed.</p></div>
+        <div class="work-toolbar reveal" role="group" aria-label="Filter projects" data-i18n-aria="workFilterAria"><button class="filter-button is-active" type="button" data-filter="all" aria-pressed="true"><span data-i18n="filterAll">All</span> <span id="projectCount">—</span></button><button class="filter-button" type="button" data-filter="development" aria-pressed="false" data-i18n="filterDevelopment">In development</button><button class="filter-button" type="button" data-filter="github" aria-pressed="false" data-i18n="filterGithub">GitHub repositories</button></div>
+        <div class="work-grid" id="workGrid">
+          <article class="work-card work-card-feature reveal is-visible" data-category="development"><div class="work-visual visual-portfolio"><div class="mini-browser"><div class="browser-top"><span></span><span></span><span></span><small>PORTFOLIO / V3</small></div><div class="browser-body"><div class="browser-kicker">QALANDAR®</div><div class="browser-headline">Digital craft.<br><em>Built to stand apart.</em></div><div class="browser-pill"></div><div class="browser-subline"></div><div class="browser-subline small"></div></div></div><span class="visual-marker" data-i18n="workCurrentTag">01 / CURRENT BUILD</span></div><div class="work-info"><div class="work-status"><span class="status-pill" data-i18n="inDevelopment">IN DEVELOPMENT</span><span class="project-number">PROJECT 01</span></div><h3>Qalandar® — Luxury Portfolio V3</h3><p data-i18n="portfolioDescription">This website: a multilingual responsive portfolio with a portrait reveal, GitHub API integration, Formspree contact and thoughtful motion.</p><div class="work-links"><a href="https://github.com/kalandardev" target="_blank" rel="noopener noreferrer"><span data-i18n="visitGithub">Visit my GitHub</span> ↗</a><span>HTML · CSS · JS</span></div></div></article>
+        </div>
+        <div class="repo-status" id="repoStatus" role="status" aria-live="polite" data-i18n="reposLoading">Loading public GitHub repositories…</div>
+        <p class="repo-footnote" data-i18n="repoFootnote">Only public repositories are shown. New public repositories will appear automatically.</p>
+      </div>
+    </section>
+
+    <section class="section journey-section" id="journey" aria-labelledby="journey-title"><div class="shell split-layout"><div class="section-side reveal"><span class="section-number">04 / JOURNEY</span><div class="section-side-rule"></div><span class="aside-micro" data-i18n="journeyMicro">PROGRESS, NOT PRETENSE</span></div><div class="section-main"><div class="reveal"><p class="eyebrow eyebrow-plain" data-i18n="journeyEyebrow">THE PATH FORWARD</p><h2 class="section-title" id="journey-title"><span data-i18n="journeyTitle1">The work behind</span><br><em data-i18n="journeyTitle2">the ambition.</em></h2></div><div class="timeline"><div class="timeline-item reveal"><span class="timeline-dot"></span><span class="timeline-time" data-i18n="timelineTime1">FOUNDATIONS</span><h3 data-i18n="timelineTitle1">Starting with the web</h3><p data-i18n="timelineCopy1">Learning HTML, CSS and programming basics by building small, practical projects.</p></div><div class="timeline-item reveal"><span class="timeline-dot"></span><span class="timeline-time" data-i18n="timelineTime2">2026 · CURRENT</span><h3 data-i18n="timelineTitle2">Computer Science & portfolio development</h3><p data-i18n="timelineCopy2">Studying Computer Science with an International Foundation at BSBI and creating a focused development portfolio.</p></div><div class="timeline-item reveal"><span class="timeline-dot"></span><span class="timeline-time" data-i18n="timelineTime3">NEXT STEPS</span><h3 data-i18n="timelineTitle3">Stronger projects, deeper skills</h3><p data-i18n="timelineCopy3">Shipping tested frontend applications, learning modern frameworks and preparing for junior developer opportunities.</p></div></div></div></div></section>
+
+    <section class="section contact-section" id="contact" aria-labelledby="contact-title"><div class="shell"><div class="contact-intro reveal"><p class="eyebrow eyebrow-plain" data-i18n="contactEyebrow">LET'S CONNECT</p><h2 class="contact-title" id="contact-title"><span data-i18n="contactTitle1">Have an idea?</span><br><em data-i18n="contactTitle2">Let's make it real.</em></h2><p data-i18n="contactIntro">Interested in collaborating, discussing a frontend project or sharing an opportunity? Send a message below.</p></div><div class="contact-grid"><div class="contact-aside reveal"><span class="contact-meta-title" data-i18n="contactFind">FIND ME ONLINE</span><a class="social-link" href="https://github.com/kalandardev" target="_blank" rel="noopener noreferrer"><span>GITHUB</span><span aria-hidden="true">↗</span></a><a class="social-link" href="#about"><span data-i18n="contactAbout">ABOUT ME</span><span aria-hidden="true">↗</span></a><div class="contact-note"><span class="status-dot" aria-hidden="true"></span><p data-i18n="contactNote">Open to conversations about learning, collaboration and web development.</p></div></div>
+          <form class="contact-form reveal" id="contactForm" action="https://formspree.io/f/xwlvqzez" method="POST"><div class="form-row"><div class="field"><label for="contactName" data-i18n="formName">Your name</label><input id="contactName" name="name" type="text" autocomplete="name" placeholder="How should I address you?" data-i18n-placeholder="placeholderName" maxlength="80" required></div><div class="field"><label for="contactEmail" data-i18n="formEmail">Your email</label><input id="contactEmail" name="email" type="email" autocomplete="email" placeholder="you@example.com" maxlength="150" required></div></div><div class="field"><label for="contactSubject" data-i18n="formSubject">Subject</label><input id="contactSubject" name="subject" type="text" placeholder="What would you like to discuss?" data-i18n-placeholder="placeholderSubject" maxlength="120" required></div><div class="field"><label for="contactMessage" data-i18n="formMessage">Message</label><textarea id="contactMessage" name="message" rows="5" placeholder="Tell me about your idea or project…" data-i18n-placeholder="placeholderMessage" maxlength="2000" required></textarea></div><div class="form-bottom"><button class="button button-gold" type="submit"><span data-i18n="formSend">Send message</span> <span aria-hidden="true">↗</span></button><p class="form-help" id="formFeedback" role="status" aria-live="polite" data-i18n="formHint">Messages are sent securely through Formspree.</p></div></form>
+        </div></div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="shell footer-grid"><div><a class="brand footer-brand" href="#home">QALANDAR<span class="brand-star">✦</span></a><p data-i18n="footerTagline">Thoughtful code. Distinctive design.</p></div><div class="footer-links"><a href="https://github.com/kalandardev" target="_blank" rel="noopener noreferrer">GITHUB ↗</a><a href="#work" data-i18n="footerProjects">PROJECTS ↗</a><a href="#home" data-i18n="footerTop">BACK TO TOP ↑</a></div><div class="copyright">© <span id="year">2026</span> QALANDAR. <span data-i18n="footerCopyright">BUILT WITH INTENTION.</span></div></div></footer>
+  <button class="back-to-top" id="backToTop" type="button" aria-label="Back to top" data-i18n-aria="backToTop">↑</button>
+</body>
+</html>
